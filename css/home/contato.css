@@ -1,0 +1,190 @@
+.titulo {
+    padding-bottom: 80px;
+}
+
+.titulo-bg span {
+    color: var(--cor-p1);
+}
+
+#contato {
+    background: linear-gradient(var(--cor-11) 600px, var(--cor-1) 0px);
+}
+
+.contato {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+}
+
+.contato__bg {
+    background: var(--cor-12);
+
+}
+
+.contato__bg, .form {
+    border-radius: 5px 0px 0px 5px;
+    padding: 60px;
+}
+
+.contato-endereco {
+    margin-bottom: 32px;
+    padding-left: 28px;
+    background: url(../../img/icones/local.svg) no-repeat 0px 2px;
+
+}
+
+.contato-endereco p {
+    margin-bottom: 8px;
+}
+
+.contato-email a {
+    display: block;
+    max-width: max-content;
+    margin-bottom: 8px;
+    padding-left: 28px;
+}
+
+.contato-email a:first-child {
+    background: url(../../img/icones/email.svg) no-repeat 0px 2px;
+}
+
+.contato-email a:last-child {
+    background: url(../../img/icones/telefone.svg) no-repeat 0px 2px;
+}
+
+.contato-email a:nth-child(2) {
+    margin-bottom: 32px;
+}
+
+
+address a {
+    color: inherit;
+    font-style: normal;
+}
+
+.contato-redes {
+    display: flex;
+    gap: 32px;
+    padding-left: 28px;
+    padding-top: 40px;
+}
+
+.form-bg {
+    background: var(--cor-0) url(../../img/dec/bottom-right.svg) no-repeat bottom 20px right 20px;
+    border-radius: 0 5px 5px 0px;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form label {
+    display: block;
+    font: 400 1rem/1.5 "Poppins", sans-serif;
+    margin-bottom: 4px;
+}
+
+.form input, #mensagem {
+    font: 400 1rem/1.5 "Roboto", sans-serif;
+    background: var(--cor-1);
+    border: 1px solid var(--cor-2);
+    padding: 12px;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form .col-2 {
+    grid-column: span 2;
+}
+
+.spec {
+    border: none;
+}
+
+.spec::after {
+    display: none;
+}
+
+
+.lojas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 40px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.lojas h2 {
+    grid-column: 1 / -1;
+    margin-bottom: 60px;
+    font-size: 3rem;
+}
+
+.lojas-item {
+    border-radius: 4px;
+    background: var(--cor-0);
+    box-shadow: 0 1px 2px rgb(0, 0, 0 / 10%);
+}
+
+.endereco_fim {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 32px;
+    gap: 32px 16px;
+}
+
+.loja-dados {
+    display: grid;
+    gap: 8px;
+    border-left: 2px solid var(--cor-1);
+    padding-left: 12px;
+}
+
+.endereco_fim h3 {
+    padding-top: 30px;
+    grid-column: 1 /-1;
+}
+
+.lojas-tempo {
+    display: flex;
+    align-items: center;
+}
+
+.lojas-tempo img {
+    padding-right: 10px;
+}
+
+.lojas h2 span {
+    color: var(--cor-p1);
+}
+
+@media (max-width: 800px) {
+    .contato {
+        grid-template-columns: 1fr;
+    }
+
+    .titulo-bg {
+        padding-bottom: 0px;
+    }
+
+    .titulo {
+        padding-left: 60px;
+    }
+
+    .lojas h2 {
+        padding-left: 60px;
+        font-size: 2rem;
+    }
+
+    .endereco_fim {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .lojas {
+        grid-template-columns: 1fr;
+    }
+}

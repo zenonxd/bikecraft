@@ -1,0 +1,20 @@
+/* reset */
+@import "./global/global.css";
+/* header */
+@import "./global/header.css";
+
+/* utilidades */
+
+@import "./utilidades/cores.css";
+@import "./utilidades/tipografia.css";
+
+@import "./home/introducao.css";
+@import "./home/section1.css";
+@import "./home/section2.css";
+@import "./home/parceiros.css";
+@import "./home/depoimento.css";
+@import "./home/seguros.css";
+@import "./home/footer.css";
+@import "./home/bicicletas.css";
+@import "./home/seguros-pagina.css";
+@import "./home/contato.css";

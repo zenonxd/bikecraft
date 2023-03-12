@@ -1,0 +1,77 @@
+.vantagens-bg {
+    background: var(--cor-12);
+}
+
+.vantagens_container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+}
+
+.vantagens_container h2 {
+    margin-bottom: 50px;
+}
+
+.vantagens_container h2 span {
+    color: var(--cor-p1);
+}
+
+.vantagens_container ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+    gap: 40px 80px;
+}
+
+.perguntas {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.container h2 {
+    margin-bottom: 60px;
+}
+
+.perguntas dt {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.perguntas dd {
+    max-width: 80ch;
+    padding-left: 20px;
+    padding-top: 16px;
+}
+
+.perguntas dt::before {
+    content: "";
+    height: 8px;
+    width: 12px;
+    background-color: var(--cor-p1);
+    display: inline-block;
+}
+
+.perguntas dt::after {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 6px;
+    background: url(../../img/icones/seta-abrir.svg);
+    transition: 0.3s;
+}
+
+.perguntas dt:hover::after {
+    transform: rotate(180deg) scaleX(-1);
+
+}
+
+.perguntas dl > div:nth-child(odd) {
+    background: var(--cor-1);
+}
+
+.perguntas dl > div {
+    padding: 30px;
+    border-radius: 4px;
+}

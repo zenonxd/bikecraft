@@ -1,0 +1,139 @@
+.titulo-bg {
+    background: var(--cor-11);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.titulo {
+    background: url(../../img/dec/top-right.svg) no-repeat top 40px right 20px;
+}
+
+.bicicletas-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    align-items: center;
+    background: url(../../img/dec/top-right.svg) no-repeat top 80px right 20px;
+
+}
+
+.bicicleta__imagem {
+    border-radius: 4px;
+    display: grid;
+}
+
+.bicicletas_conteudo {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-content: start;
+}
+
+.bicicletas_conteudo p {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    
+}
+
+.bicicletas_conteudo h2 {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    font-size: 2rem;
+}
+
+.bicicletas_conteudo a {
+   place-self: end;
+   grid-row: 4;
+}
+
+.bicicleta-lista {
+    display: grid;
+    gap: 16px;
+    grid-row: 4;
+    grid-column: 1 / -1;
+}
+
+.bicicleta-lista li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.botao-espec::after {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 10px;
+    margin-left: 12px;
+    background: url(../../img/icones/seta.svg);
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.bicicletas_conteudo h2 {
+    margin-bottom: 0px;
+}
+
+.bicicletas_conteudo p {
+    padding-bottom: 20px;
+}
+
+.bicicletas_conteudo img {
+    width: 24px;
+    margin-right: 8px;
+}
+
+.might {
+    background: url(../../img/dec/top-right.svg) no-repeat top 40px right 20px, linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 0%);
+
+}
+
+.bicicletas_conteudo::before {
+    content: "";
+    width: 12px;
+    height: 8px;
+    background: var(--cor-p1);
+    display: block;
+    margin-bottom: 8px;
+}
+
+
+.preco {
+    grid-area: 1 / 1;
+    place-self: start end;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 8px 16px 8px 8px;
+    position: relative;
+    top: 60px;
+    background: var(--cor-11);
+}
+
+.bicicletas-menu .nebula {
+    padding-top: 10px;
+}
+
+
+@media (max-width: 1200px) {
+    .botao::after {
+        content: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .bicicletas-menu {
+        grid-template-columns: 1fr;
+        background: none;
+    }
+
+    .bicicletas_conteudo h2 {
+        margin-bottom: 0px !important;
+    }
+
+    .might {
+        background: linear-gradient(to right, var(--cor-0) 0%, var(--cor-11) 0%);
+
+    }
+}
